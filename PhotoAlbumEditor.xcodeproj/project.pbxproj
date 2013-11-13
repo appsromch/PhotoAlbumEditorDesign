@@ -1,0 +1,678 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F519FE49181A1C1600146C9C /* PAPictureDataTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = F519FE48181A1C1600146C9C /* PAPictureDataTransformer.m */; };
+		F519FE52181A210000146C9C /* PhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F519FE51181A210000146C9C /* PhotoCollectionViewCell.m */; };
+		F519FE57181A254400146C9C /* Album.m in Sources */ = {isa = PBXBuildFile; fileRef = F519FE56181A254400146C9C /* Album.m */; };
+		F519FE5A181A254500146C9C /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = F519FE59181A254500146C9C /* Photo.m */; };
+		F51FA2001817533000A5F438 /* PAAlbumTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51FA1FF1817533000A5F438 /* PAAlbumTableViewController.m */; };
+		F51FA2031817534D00A5F438 /* PAPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F51FA2021817534D00A5F438 /* PAPhotosCollectionViewController.m */; };
+		F53FB26418187FF7007C029B /* PAEditPhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53FB26318187FF7007C029B /* PAEditPhotoViewController.m */; };
+		F53FB26718188015007C029B /* PAPhotoDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F53FB26618188015007C029B /* PAPhotoDetailViewController.m */; };
+		F53FB26A18188246007C029B /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F53FB26918188246007C029B /* CoreDataHelper.m */; };
+		F5810D0E181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F5810D0D181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.m */; };
+		F5ADD768181AE90200E07992 /* grandpa in Resources */ = {isa = PBXBuildFile; fileRef = F5ADD767181AE90200E07992 /* grandpa */; };
+		F5D7830A18174E6F0078C258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830918174E6F0078C258 /* Foundation.framework */; };
+		F5D7830C18174E6F0078C258 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830B18174E6F0078C258 /* CoreGraphics.framework */; };
+		F5D7830E18174E6F0078C258 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830D18174E6F0078C258 /* UIKit.framework */; };
+		F5D7831018174E6F0078C258 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830F18174E6F0078C258 /* CoreData.framework */; };
+		F5D7831618174E6F0078C258 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D7831418174E6F0078C258 /* InfoPlist.strings */; };
+		F5D7831818174E6F0078C258 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7831718174E6F0078C258 /* main.m */; };
+		F5D7831C18174E6F0078C258 /* PAAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7831B18174E6F0078C258 /* PAAppDelegate.m */; };
+		F5D7831F18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5D7831D18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodeld */; };
+		F5D7832118174E6F0078C258 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5D7832018174E6F0078C258 /* Images.xcassets */; };
+		F5D7832818174E6F0078C258 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7832718174E6F0078C258 /* XCTest.framework */; };
+		F5D7832918174E6F0078C258 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830918174E6F0078C258 /* Foundation.framework */; };
+		F5D7832A18174E6F0078C258 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830D18174E6F0078C258 /* UIKit.framework */; };
+		F5D7832B18174E6F0078C258 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D7830F18174E6F0078C258 /* CoreData.framework */; };
+		F5D7833318174E6F0078C258 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F5D7833118174E6F0078C258 /* InfoPlist.strings */; };
+		F5D7833518174E6F0078C258 /* PhotoAlbumEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7833418174E6F0078C258 /* PhotoAlbumEditorTests.m */; };
+		F5D7833F18174E9D0078C258 /* iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5D7833E18174E9D0078C258 /* iPhone.storyboard */; };
+		F5D7836818174EF80078C258 /* FUIAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834318174EF80078C258 /* FUIAlertView.m */; };
+		F5D7836918174EF80078C258 /* FUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834518174EF80078C258 /* FUIButton.m */; };
+		F5D7836A18174EF80078C258 /* FUICellBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834718174EF80078C258 /* FUICellBackgroundView.m */; };
+		F5D7836B18174EF80078C258 /* FUIPopoverBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834918174EF80078C258 /* FUIPopoverBackgroundView.m */; };
+		F5D7836C18174EF80078C258 /* FUISegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834B18174EF80078C258 /* FUISegmentedControl.m */; };
+		F5D7836D18174EF80078C258 /* FUISwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834D18174EF80078C258 /* FUISwitch.m */; };
+		F5D7836E18174EF80078C258 /* FUITextField.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7834F18174EF80078C258 /* FUITextField.m */; };
+		F5D7836F18174EF80078C258 /* UIBarButtonItem+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835118174EF80078C258 /* UIBarButtonItem+FlatUI.m */; };
+		F5D7837018174EF80078C258 /* UIColor+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835318174EF80078C258 /* UIColor+FlatUI.m */; };
+		F5D7837118174EF80078C258 /* UIFont+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835518174EF80078C258 /* UIFont+FlatUI.m */; };
+		F5D7837218174EF80078C258 /* UIImage+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835718174EF80078C258 /* UIImage+FlatUI.m */; };
+		F5D7837318174EF80078C258 /* UINavigationBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835918174EF80078C258 /* UINavigationBar+FlatUI.m */; };
+		F5D7837418174EF80078C258 /* UIPopoverController+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835B18174EF80078C258 /* UIPopoverController+FlatUI.m */; };
+		F5D7837518174EF80078C258 /* UIProgressView+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835D18174EF80078C258 /* UIProgressView+FlatUI.m */; };
+		F5D7837618174EF80078C258 /* UISlider+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7835F18174EF80078C258 /* UISlider+FlatUI.m */; };
+		F5D7837718174EF80078C258 /* UIStepper+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7836118174EF80078C258 /* UIStepper+FlatUI.m */; };
+		F5D7837818174EF80078C258 /* UITabBar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7836318174EF80078C258 /* UITabBar+FlatUI.m */; };
+		F5D7837918174EF80078C258 /* UITableViewCell+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7836518174EF80078C258 /* UITableViewCell+FlatUI.m */; };
+		F5D7837A18174EF80078C258 /* UIToolbar+FlatUI.m in Sources */ = {isa = PBXBuildFile; fileRef = F5D7836718174EF80078C258 /* UIToolbar+FlatUI.m */; };
+		F5D7F0CA1820633200CD5D4C /* ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5D7F0C91820633200CD5D4C /* ionicons.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F5D7832C18174E6F0078C258 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5D782FE18174E6F0078C258 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5D7830518174E6F0078C258;
+			remoteInfo = PhotoAlbumEditor;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F519FE47181A1C1600146C9C /* PAPictureDataTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPictureDataTransformer.h; sourceTree = "<group>"; };
+		F519FE48181A1C1600146C9C /* PAPictureDataTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPictureDataTransformer.m; sourceTree = "<group>"; };
+		F519FE50181A210000146C9C /* PhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		F519FE51181A210000146C9C /* PhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		F519FE55181A254400146C9C /* Album.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Album.h; sourceTree = "<group>"; };
+		F519FE56181A254400146C9C /* Album.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Album.m; sourceTree = "<group>"; };
+		F519FE58181A254500146C9C /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		F519FE59181A254500146C9C /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		F51FA1FE1817533000A5F438 /* PAAlbumTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAAlbumTableViewController.h; sourceTree = "<group>"; };
+		F51FA1FF1817533000A5F438 /* PAAlbumTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAAlbumTableViewController.m; sourceTree = "<group>"; };
+		F51FA2011817534D00A5F438 /* PAPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPhotosCollectionViewController.h; sourceTree = "<group>"; };
+		F51FA2021817534D00A5F438 /* PAPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		F53FB26218187FF7007C029B /* PAEditPhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAEditPhotoViewController.h; sourceTree = "<group>"; };
+		F53FB26318187FF7007C029B /* PAEditPhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAEditPhotoViewController.m; sourceTree = "<group>"; };
+		F53FB26518188015007C029B /* PAPhotoDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPhotoDetailViewController.h; sourceTree = "<group>"; };
+		F53FB26618188015007C029B /* PAPhotoDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPhotoDetailViewController.m; sourceTree = "<group>"; };
+		F53FB26818188246007C029B /* CoreDataHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
+		F53FB26918188246007C029B /* CoreDataHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		F5810D0C181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAFilterPhotosCollectionViewController.h; sourceTree = "<group>"; };
+		F5810D0D181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAFilterPhotosCollectionViewController.m; sourceTree = "<group>"; };
+		F5ADD767181AE90200E07992 /* grandpa */ = {isa = PBXFileReference; lastKnownFileType = file; path = grandpa; sourceTree = "<group>"; };
+		F5D7830618174E6F0078C258 /* PhotoAlbumEditor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoAlbumEditor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D7830918174E6F0078C258 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F5D7830B18174E6F0078C258 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F5D7830D18174E6F0078C258 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F5D7830F18174E6F0078C258 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5D7831318174E6F0078C258 /* PhotoAlbumEditor-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoAlbumEditor-Info.plist"; sourceTree = "<group>"; };
+		F5D7831518174E6F0078C258 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5D7831718174E6F0078C258 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F5D7831918174E6F0078C258 /* PhotoAlbumEditor-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PhotoAlbumEditor-Prefix.pch"; sourceTree = "<group>"; };
+		F5D7831A18174E6F0078C258 /* PAAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PAAppDelegate.h; sourceTree = "<group>"; };
+		F5D7831B18174E6F0078C258 /* PAAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PAAppDelegate.m; sourceTree = "<group>"; };
+		F5D7831E18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PhotoAlbumEditor.xcdatamodel; sourceTree = "<group>"; };
+		F5D7832018174E6F0078C258 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F5D7832618174E6F0078C258 /* PhotoAlbumEditorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoAlbumEditorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5D7832718174E6F0078C258 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F5D7833018174E6F0078C258 /* PhotoAlbumEditorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PhotoAlbumEditorTests-Info.plist"; sourceTree = "<group>"; };
+		F5D7833218174E6F0078C258 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F5D7833418174E6F0078C258 /* PhotoAlbumEditorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoAlbumEditorTests.m; sourceTree = "<group>"; };
+		F5D7833E18174E9D0078C258 /* iPhone.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPhone.storyboard; sourceTree = "<group>"; };
+		F5D7834118174EF80078C258 /* FlatUIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlatUIKit.h; sourceTree = "<group>"; };
+		F5D7834218174EF80078C258 /* FUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIAlertView.h; sourceTree = "<group>"; };
+		F5D7834318174EF80078C258 /* FUIAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIAlertView.m; sourceTree = "<group>"; };
+		F5D7834418174EF80078C258 /* FUIButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIButton.h; sourceTree = "<group>"; };
+		F5D7834518174EF80078C258 /* FUIButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIButton.m; sourceTree = "<group>"; };
+		F5D7834618174EF80078C258 /* FUICellBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUICellBackgroundView.h; sourceTree = "<group>"; };
+		F5D7834718174EF80078C258 /* FUICellBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUICellBackgroundView.m; sourceTree = "<group>"; };
+		F5D7834818174EF80078C258 /* FUIPopoverBackgroundView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUIPopoverBackgroundView.h; sourceTree = "<group>"; };
+		F5D7834918174EF80078C258 /* FUIPopoverBackgroundView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUIPopoverBackgroundView.m; sourceTree = "<group>"; };
+		F5D7834A18174EF80078C258 /* FUISegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISegmentedControl.h; sourceTree = "<group>"; };
+		F5D7834B18174EF80078C258 /* FUISegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISegmentedControl.m; sourceTree = "<group>"; };
+		F5D7834C18174EF80078C258 /* FUISwitch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUISwitch.h; sourceTree = "<group>"; };
+		F5D7834D18174EF80078C258 /* FUISwitch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUISwitch.m; sourceTree = "<group>"; };
+		F5D7834E18174EF80078C258 /* FUITextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FUITextField.h; sourceTree = "<group>"; };
+		F5D7834F18174EF80078C258 /* FUITextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FUITextField.m; sourceTree = "<group>"; };
+		F5D7835018174EF80078C258 /* UIBarButtonItem+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835118174EF80078C258 /* UIBarButtonItem+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835218174EF80078C258 /* UIColor+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835318174EF80078C258 /* UIColor+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835418174EF80078C258 /* UIFont+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835518174EF80078C258 /* UIFont+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835618174EF80078C258 /* UIImage+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835718174EF80078C258 /* UIImage+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835818174EF80078C258 /* UINavigationBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835918174EF80078C258 /* UINavigationBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835A18174EF80078C258 /* UIPopoverController+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIPopoverController+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835B18174EF80078C258 /* UIPopoverController+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIPopoverController+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835C18174EF80078C258 /* UIProgressView+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIProgressView+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835D18174EF80078C258 /* UIProgressView+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIProgressView+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7835E18174EF80078C258 /* UISlider+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7835F18174EF80078C258 /* UISlider+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7836018174EF80078C258 /* UIStepper+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIStepper+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7836118174EF80078C258 /* UIStepper+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIStepper+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7836218174EF80078C258 /* UITabBar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7836318174EF80078C258 /* UITabBar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7836418174EF80078C258 /* UITableViewCell+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7836518174EF80078C258 /* UITableViewCell+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7836618174EF80078C258 /* UIToolbar+FlatUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIToolbar+FlatUI.h"; sourceTree = "<group>"; };
+		F5D7836718174EF80078C258 /* UIToolbar+FlatUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIToolbar+FlatUI.m"; sourceTree = "<group>"; };
+		F5D7F0C91820633200CD5D4C /* ionicons.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ionicons.ttf; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F5D7830318174E6F0078C258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7830C18174E6F0078C258 /* CoreGraphics.framework in Frameworks */,
+				F5D7831018174E6F0078C258 /* CoreData.framework in Frameworks */,
+				F5D7830E18174E6F0078C258 /* UIKit.framework in Frameworks */,
+				F5D7830A18174E6F0078C258 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D7832318174E6F0078C258 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7832818174E6F0078C258 /* XCTest.framework in Frameworks */,
+				F5D7832B18174E6F0078C258 /* CoreData.framework in Frameworks */,
+				F5D7832A18174E6F0078C258 /* UIKit.framework in Frameworks */,
+				F5D7832918174E6F0078C258 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F5D782FD18174E6F0078C258 = {
+			isa = PBXGroup;
+			children = (
+				F5D7831118174E6F0078C258 /* PhotoAlbumEditor */,
+				F5D7832E18174E6F0078C258 /* PhotoAlbumEditorTests */,
+				F5D7830818174E6F0078C258 /* Frameworks */,
+				F5D7830718174E6F0078C258 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F5D7830718174E6F0078C258 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7830618174E6F0078C258 /* PhotoAlbumEditor.app */,
+				F5D7832618174E6F0078C258 /* PhotoAlbumEditorTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5D7830818174E6F0078C258 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7830918174E6F0078C258 /* Foundation.framework */,
+				F5D7830B18174E6F0078C258 /* CoreGraphics.framework */,
+				F5D7830D18174E6F0078C258 /* UIKit.framework */,
+				F5D7830F18174E6F0078C258 /* CoreData.framework */,
+				F5D7832718174E6F0078C258 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5D7831118174E6F0078C258 /* PhotoAlbumEditor */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7831A18174E6F0078C258 /* PAAppDelegate.h */,
+				F5D7831B18174E6F0078C258 /* PAAppDelegate.m */,
+				F5D7833E18174E9D0078C258 /* iPhone.storyboard */,
+				F51FA1FE1817533000A5F438 /* PAAlbumTableViewController.h */,
+				F51FA1FF1817533000A5F438 /* PAAlbumTableViewController.m */,
+				F51FA2011817534D00A5F438 /* PAPhotosCollectionViewController.h */,
+				F51FA2021817534D00A5F438 /* PAPhotosCollectionViewController.m */,
+				F5810D0C181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.h */,
+				F5810D0D181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.m */,
+				F519FE50181A210000146C9C /* PhotoCollectionViewCell.h */,
+				F519FE51181A210000146C9C /* PhotoCollectionViewCell.m */,
+				F53FB26518188015007C029B /* PAPhotoDetailViewController.h */,
+				F53FB26618188015007C029B /* PAPhotoDetailViewController.m */,
+				F53FB26218187FF7007C029B /* PAEditPhotoViewController.h */,
+				F53FB26318187FF7007C029B /* PAEditPhotoViewController.m */,
+				F53FB26818188246007C029B /* CoreDataHelper.h */,
+				F53FB26918188246007C029B /* CoreDataHelper.m */,
+				F5D7832018174E6F0078C258 /* Images.xcassets */,
+				F519FE55181A254400146C9C /* Album.h */,
+				F519FE58181A254500146C9C /* Photo.h */,
+				F519FE59181A254500146C9C /* Photo.m */,
+				F519FE56181A254400146C9C /* Album.m */,
+				F5D7831D18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodeld */,
+				F519FE47181A1C1600146C9C /* PAPictureDataTransformer.h */,
+				F519FE48181A1C1600146C9C /* PAPictureDataTransformer.m */,
+				F5D7F0C91820633200CD5D4C /* ionicons.ttf */,
+				F5ADD767181AE90200E07992 /* grandpa */,
+				F5D7834018174EF80078C258 /* ios */,
+				F5D7831218174E6F0078C258 /* Supporting Files */,
+			);
+			path = PhotoAlbumEditor;
+			sourceTree = "<group>";
+		};
+		F5D7831218174E6F0078C258 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7831318174E6F0078C258 /* PhotoAlbumEditor-Info.plist */,
+				F5D7831418174E6F0078C258 /* InfoPlist.strings */,
+				F5D7831718174E6F0078C258 /* main.m */,
+				F5D7831918174E6F0078C258 /* PhotoAlbumEditor-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5D7832E18174E6F0078C258 /* PhotoAlbumEditorTests */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7833418174E6F0078C258 /* PhotoAlbumEditorTests.m */,
+				F5D7832F18174E6F0078C258 /* Supporting Files */,
+			);
+			path = PhotoAlbumEditorTests;
+			sourceTree = "<group>";
+		};
+		F5D7832F18174E6F0078C258 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7833018174E6F0078C258 /* PhotoAlbumEditorTests-Info.plist */,
+				F5D7833118174E6F0078C258 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F5D7834018174EF80078C258 /* ios */ = {
+			isa = PBXGroup;
+			children = (
+				F5D7834118174EF80078C258 /* FlatUIKit.h */,
+				F5D7834218174EF80078C258 /* FUIAlertView.h */,
+				F5D7834318174EF80078C258 /* FUIAlertView.m */,
+				F5D7834418174EF80078C258 /* FUIButton.h */,
+				F5D7834518174EF80078C258 /* FUIButton.m */,
+				F5D7834618174EF80078C258 /* FUICellBackgroundView.h */,
+				F5D7834718174EF80078C258 /* FUICellBackgroundView.m */,
+				F5D7834818174EF80078C258 /* FUIPopoverBackgroundView.h */,
+				F5D7834918174EF80078C258 /* FUIPopoverBackgroundView.m */,
+				F5D7834A18174EF80078C258 /* FUISegmentedControl.h */,
+				F5D7834B18174EF80078C258 /* FUISegmentedControl.m */,
+				F5D7834C18174EF80078C258 /* FUISwitch.h */,
+				F5D7834D18174EF80078C258 /* FUISwitch.m */,
+				F5D7834E18174EF80078C258 /* FUITextField.h */,
+				F5D7834F18174EF80078C258 /* FUITextField.m */,
+				F5D7835018174EF80078C258 /* UIBarButtonItem+FlatUI.h */,
+				F5D7835118174EF80078C258 /* UIBarButtonItem+FlatUI.m */,
+				F5D7835218174EF80078C258 /* UIColor+FlatUI.h */,
+				F5D7835318174EF80078C258 /* UIColor+FlatUI.m */,
+				F5D7835418174EF80078C258 /* UIFont+FlatUI.h */,
+				F5D7835518174EF80078C258 /* UIFont+FlatUI.m */,
+				F5D7835618174EF80078C258 /* UIImage+FlatUI.h */,
+				F5D7835718174EF80078C258 /* UIImage+FlatUI.m */,
+				F5D7835818174EF80078C258 /* UINavigationBar+FlatUI.h */,
+				F5D7835918174EF80078C258 /* UINavigationBar+FlatUI.m */,
+				F5D7835A18174EF80078C258 /* UIPopoverController+FlatUI.h */,
+				F5D7835B18174EF80078C258 /* UIPopoverController+FlatUI.m */,
+				F5D7835C18174EF80078C258 /* UIProgressView+FlatUI.h */,
+				F5D7835D18174EF80078C258 /* UIProgressView+FlatUI.m */,
+				F5D7835E18174EF80078C258 /* UISlider+FlatUI.h */,
+				F5D7835F18174EF80078C258 /* UISlider+FlatUI.m */,
+				F5D7836018174EF80078C258 /* UIStepper+FlatUI.h */,
+				F5D7836118174EF80078C258 /* UIStepper+FlatUI.m */,
+				F5D7836218174EF80078C258 /* UITabBar+FlatUI.h */,
+				F5D7836318174EF80078C258 /* UITabBar+FlatUI.m */,
+				F5D7836418174EF80078C258 /* UITableViewCell+FlatUI.h */,
+				F5D7836518174EF80078C258 /* UITableViewCell+FlatUI.m */,
+				F5D7836618174EF80078C258 /* UIToolbar+FlatUI.h */,
+				F5D7836718174EF80078C258 /* UIToolbar+FlatUI.m */,
+			);
+			path = ios;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F5D7830518174E6F0078C258 /* PhotoAlbumEditor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D7833818174E6F0078C258 /* Build configuration list for PBXNativeTarget "PhotoAlbumEditor" */;
+			buildPhases = (
+				F5D7830218174E6F0078C258 /* Sources */,
+				F5D7830318174E6F0078C258 /* Frameworks */,
+				F5D7830418174E6F0078C258 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoAlbumEditor;
+			productName = PhotoAlbumEditor;
+			productReference = F5D7830618174E6F0078C258 /* PhotoAlbumEditor.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F5D7832518174E6F0078C258 /* PhotoAlbumEditorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5D7833B18174E6F0078C258 /* Build configuration list for PBXNativeTarget "PhotoAlbumEditorTests" */;
+			buildPhases = (
+				F5D7832218174E6F0078C258 /* Sources */,
+				F5D7832318174E6F0078C258 /* Frameworks */,
+				F5D7832418174E6F0078C258 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F5D7832D18174E6F0078C258 /* PBXTargetDependency */,
+			);
+			name = PhotoAlbumEditorTests;
+			productName = PhotoAlbumEditorTests;
+			productReference = F5D7832618174E6F0078C258 /* PhotoAlbumEditorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5D782FE18174E6F0078C258 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PA;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Teddy Wyly";
+				TargetAttributes = {
+					F5D7832518174E6F0078C258 = {
+						TestTargetID = F5D7830518174E6F0078C258;
+					};
+				};
+			};
+			buildConfigurationList = F5D7830118174E6F0078C258 /* Build configuration list for PBXProject "PhotoAlbumEditor" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F5D782FD18174E6F0078C258;
+			productRefGroup = F5D7830718174E6F0078C258 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5D7830518174E6F0078C258 /* PhotoAlbumEditor */,
+				F5D7832518174E6F0078C258 /* PhotoAlbumEditorTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F5D7830418174E6F0078C258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7831618174E6F0078C258 /* InfoPlist.strings in Resources */,
+				F5D7F0CA1820633200CD5D4C /* ionicons.ttf in Resources */,
+				F5D7833F18174E9D0078C258 /* iPhone.storyboard in Resources */,
+				F5D7832118174E6F0078C258 /* Images.xcassets in Resources */,
+				F5ADD768181AE90200E07992 /* grandpa in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D7832418174E6F0078C258 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7833318174E6F0078C258 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F5D7830218174E6F0078C258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7837918174EF80078C258 /* UITableViewCell+FlatUI.m in Sources */,
+				F5D7836F18174EF80078C258 /* UIBarButtonItem+FlatUI.m in Sources */,
+				F5810D0E181C3CB40040CB24 /* PAFilterPhotosCollectionViewController.m in Sources */,
+				F5D7836818174EF80078C258 /* FUIAlertView.m in Sources */,
+				F53FB26718188015007C029B /* PAPhotoDetailViewController.m in Sources */,
+				F5D7837818174EF80078C258 /* UITabBar+FlatUI.m in Sources */,
+				F5D7836C18174EF80078C258 /* FUISegmentedControl.m in Sources */,
+				F5D7836E18174EF80078C258 /* FUITextField.m in Sources */,
+				F5D7837418174EF80078C258 /* UIPopoverController+FlatUI.m in Sources */,
+				F5D7831F18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodeld in Sources */,
+				F5D7837518174EF80078C258 /* UIProgressView+FlatUI.m in Sources */,
+				F5D7831818174E6F0078C258 /* main.m in Sources */,
+				F53FB26418187FF7007C029B /* PAEditPhotoViewController.m in Sources */,
+				F5D7836A18174EF80078C258 /* FUICellBackgroundView.m in Sources */,
+				F5D7831C18174E6F0078C258 /* PAAppDelegate.m in Sources */,
+				F5D7837318174EF80078C258 /* UINavigationBar+FlatUI.m in Sources */,
+				F51FA2001817533000A5F438 /* PAAlbumTableViewController.m in Sources */,
+				F5D7837218174EF80078C258 /* UIImage+FlatUI.m in Sources */,
+				F519FE5A181A254500146C9C /* Photo.m in Sources */,
+				F5D7837118174EF80078C258 /* UIFont+FlatUI.m in Sources */,
+				F5D7837618174EF80078C258 /* UISlider+FlatUI.m in Sources */,
+				F5D7837018174EF80078C258 /* UIColor+FlatUI.m in Sources */,
+				F5D7836B18174EF80078C258 /* FUIPopoverBackgroundView.m in Sources */,
+				F519FE52181A210000146C9C /* PhotoCollectionViewCell.m in Sources */,
+				F53FB26A18188246007C029B /* CoreDataHelper.m in Sources */,
+				F5D7837A18174EF80078C258 /* UIToolbar+FlatUI.m in Sources */,
+				F5D7836918174EF80078C258 /* FUIButton.m in Sources */,
+				F519FE57181A254400146C9C /* Album.m in Sources */,
+				F5D7837718174EF80078C258 /* UIStepper+FlatUI.m in Sources */,
+				F51FA2031817534D00A5F438 /* PAPhotosCollectionViewController.m in Sources */,
+				F5D7836D18174EF80078C258 /* FUISwitch.m in Sources */,
+				F519FE49181A1C1600146C9C /* PAPictureDataTransformer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5D7832218174E6F0078C258 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5D7833518174E6F0078C258 /* PhotoAlbumEditorTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F5D7832D18174E6F0078C258 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5D7830518174E6F0078C258 /* PhotoAlbumEditor */;
+			targetProxy = F5D7832C18174E6F0078C258 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F5D7831418174E6F0078C258 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7831518174E6F0078C258 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F5D7833118174E6F0078C258 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F5D7833218174E6F0078C258 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F5D7833618174E6F0078C258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F5D7833718174E6F0078C258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5D7833918174E6F0078C258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoAlbumEditor/PhotoAlbumEditor-Prefix.pch";
+				INFOPLIST_FILE = "PhotoAlbumEditor/PhotoAlbumEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F5D7833A18174E6F0078C258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoAlbumEditor/PhotoAlbumEditor-Prefix.pch";
+				INFOPLIST_FILE = "PhotoAlbumEditor/PhotoAlbumEditor-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F5D7833C18174E6F0078C258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoAlbumEditor.app/PhotoAlbumEditor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoAlbumEditor/PhotoAlbumEditor-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "PhotoAlbumEditorTests/PhotoAlbumEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F5D7833D18174E6F0078C258 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/PhotoAlbumEditor.app/PhotoAlbumEditor";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PhotoAlbumEditor/PhotoAlbumEditor-Prefix.pch";
+				INFOPLIST_FILE = "PhotoAlbumEditorTests/PhotoAlbumEditorTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F5D7830118174E6F0078C258 /* Build configuration list for PBXProject "PhotoAlbumEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7833618174E6F0078C258 /* Debug */,
+				F5D7833718174E6F0078C258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D7833818174E6F0078C258 /* Build configuration list for PBXNativeTarget "PhotoAlbumEditor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7833918174E6F0078C258 /* Debug */,
+				F5D7833A18174E6F0078C258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5D7833B18174E6F0078C258 /* Build configuration list for PBXNativeTarget "PhotoAlbumEditorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5D7833C18174E6F0078C258 /* Debug */,
+				F5D7833D18174E6F0078C258 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5D7831D18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5D7831E18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodel */,
+			);
+			currentVersion = F5D7831E18174E6F0078C258 /* PhotoAlbumEditor.xcdatamodel */;
+			path = PhotoAlbumEditor.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F5D782FE18174E6F0078C258 /* Project object */;
+}
